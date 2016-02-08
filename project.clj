@@ -22,9 +22,9 @@
                         :source-paths ["src/cljs"]
                         :figwheel {:on-jsload "reframeonheroku.core/mount-root"}
                         :compiler {:main reframeonheroku.core
-                                   :output-to "resources/public/js/compiled/app.js"
-                                   :output-dir "resources/public/js/compiled/out"
-                                   :asset-path "js/compiled/out"
+                                   :output-to "target/classes/public/js/app.js"
+                                   :output-dir "target/classes/public/js/out"
+                                   :asset-path "js/out"
                                    :source-map-timestamp true}}
 
                        {:id "min"
